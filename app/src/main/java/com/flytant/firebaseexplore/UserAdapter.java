@@ -36,8 +36,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         holder.tvEmail.setText("Email: " + userList.get(position).getEmail());
         holder.tvPassword.setText("Password: " + userList.get(position).getPassword());
-
-
+        
         holder.btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
